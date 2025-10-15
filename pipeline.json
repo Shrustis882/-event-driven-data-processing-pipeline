@@ -1,0 +1,17 @@
+{
+  "name": "DailySummaryPipeline",
+  "properties": {
+    "activities": [
+      {
+        "name": "AggregateData",
+        "type": "DataFlow",
+        "dependsOn": [],
+        "typeProperties": {
+          "sources": ["inputData"],
+          "sinks": ["outputReport"]
+        }
+      }
+    ],
+    "annotations": ["Daily summary aggregation"]
+  }
+}
